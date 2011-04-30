@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A179C688136CA31E0051F712 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A179C687136CA31E0051F712 /* Cocoa.framework */; };
+		A179C692136CA31E0051F712 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A179C690136CA31E0051F712 /* InfoPlist.strings */; };
+		A179C695136CA31E0051F712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A179C694136CA31E0051F712 /* main.m */; };
+		A179C698136CA31E0051F712 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A179C696136CA31E0051F712 /* Credits.rtf */; };
+		A179C69B136CA31E0051F712 /* SayBeatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A179C69A136CA31E0051F712 /* SayBeatAppDelegate.m */; };
+		A179C69E136CA31E0051F712 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A179C69C136CA31E0051F712 /* MainMenu.xib */; };
+		A179C6A5136CA31F0051F712 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A179C687136CA31E0051F712 /* Cocoa.framework */; };
+		A179C6AD136CA31F0051F712 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A179C6AB136CA31F0051F712 /* InfoPlist.strings */; };
+		A179C6B0136CA31F0051F712 /* SayBeatTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A179C6AF136CA31F0051F712 /* SayBeatTests.h */; };
+		A179C6B2136CA31F0051F712 /* SayBeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A179C6B1136CA31F0051F712 /* SayBeatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A179C6A6136CA31F0051F712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A179C67A136CA31E0051F712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A179C682136CA31E0051F712;
+			remoteInfo = SayBeat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A179C683136CA31E0051F712 /* SayBeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SayBeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179C687136CA31E0051F712 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A179C68A136CA31E0051F712 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A179C68B136CA31E0051F712 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A179C68C136CA31E0051F712 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A179C68F136CA31E0051F712 /* SayBeat-Info.plist */ = {isa = PBXFileReference; path = "SayBeat-Info.plist"; sourceTree = "<group>"; };
+		A179C691136CA31E0051F712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A179C693136CA31E0051F712 /* SayBeat-Prefix.pch */ = {isa = PBXFileReference; path = "SayBeat-Prefix.pch"; sourceTree = "<group>"; };
+		A179C694136CA31E0051F712 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A179C697136CA31E0051F712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A179C699136CA31E0051F712 /* SayBeatAppDelegate.h */ = {isa = PBXFileReference; path = SayBeatAppDelegate.h; sourceTree = "<group>"; };
+		A179C69A136CA31E0051F712 /* SayBeatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SayBeatAppDelegate.m; sourceTree = "<group>"; };
+		A179C69D136CA31E0051F712 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A179C6A4136CA31F0051F712 /* SayBeatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SayBeatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179C6AA136CA31F0051F712 /* SayBeatTests-Info.plist */ = {isa = PBXFileReference; path = "SayBeatTests-Info.plist"; sourceTree = "<group>"; };
+		A179C6AC136CA31F0051F712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A179C6AE136CA31F0051F712 /* SayBeatTests-Prefix.pch */ = {isa = PBXFileReference; path = "SayBeatTests-Prefix.pch"; sourceTree = "<group>"; };
+		A179C6AF136CA31F0051F712 /* SayBeatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SayBeatTests.h; sourceTree = "<group>"; };
+		A179C6B1136CA31F0051F712 /* SayBeatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SayBeatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A179C680136CA31E0051F712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179C688136CA31E0051F712 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179C6A0136CA31F0051F712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179C6A5136CA31F0051F712 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A179C678136CA31E0051F712 = {
+			isa = PBXGroup;
+			children = (
+				A179C68D136CA31E0051F712 /* SayBeat */,
+				A179C6A8136CA31F0051F712 /* SayBeatTests */,
+				A179C686136CA31E0051F712 /* Frameworks */,
+				A179C684136CA31E0051F712 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A179C684136CA31E0051F712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A179C683136CA31E0051F712 /* SayBeat.app */,
+				A179C6A4136CA31F0051F712 /* SayBeatTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A179C686136CA31E0051F712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A179C687136CA31E0051F712 /* Cocoa.framework */,
+				A179C689136CA31E0051F712 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A179C689136CA31E0051F712 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A179C68A136CA31E0051F712 /* AppKit.framework */,
+				A179C68B136CA31E0051F712 /* CoreData.framework */,
+				A179C68C136CA31E0051F712 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A179C68D136CA31E0051F712 /* SayBeat */ = {
+			isa = PBXGroup;
+			children = (
+				A179C699136CA31E0051F712 /* SayBeatAppDelegate.h */,
+				A179C69A136CA31E0051F712 /* SayBeatAppDelegate.m */,
+				A179C69C136CA31E0051F712 /* MainMenu.xib */,
+				A179C68E136CA31E0051F712 /* Supporting Files */,
+			);
+			path = SayBeat;
+			sourceTree = "<group>";
+		};
+		A179C68E136CA31E0051F712 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A179C68F136CA31E0051F712 /* SayBeat-Info.plist */,
+				A179C690136CA31E0051F712 /* InfoPlist.strings */,
+				A179C693136CA31E0051F712 /* SayBeat-Prefix.pch */,
+				A179C694136CA31E0051F712 /* main.m */,
+				A179C696136CA31E0051F712 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A179C6A8136CA31F0051F712 /* SayBeatTests */ = {
+			isa = PBXGroup;
+			children = (
+				A179C6AF136CA31F0051F712 /* SayBeatTests.h */,
+				A179C6B1136CA31F0051F712 /* SayBeatTests.m */,
+				A179C6A9136CA31F0051F712 /* Supporting Files */,
+			);
+			path = SayBeatTests;
+			sourceTree = "<group>";
+		};
+		A179C6A9136CA31F0051F712 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A179C6AA136CA31F0051F712 /* SayBeatTests-Info.plist */,
+				A179C6AB136CA31F0051F712 /* InfoPlist.strings */,
+				A179C6AE136CA31F0051F712 /* SayBeatTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A179C682136CA31E0051F712 /* SayBeat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A179C6B5136CA31F0051F712 /* Build configuration list for PBXNativeTarget "SayBeat" */;
+			buildPhases = (
+				A179C67F136CA31E0051F712 /* Sources */,
+				A179C680136CA31E0051F712 /* Frameworks */,
+				A179C681136CA31E0051F712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SayBeat;
+			productName = SayBeat;
+			productReference = A179C683136CA31E0051F712 /* SayBeat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A179C6A3136CA31F0051F712 /* SayBeatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A179C6B8136CA31F0051F712 /* Build configuration list for PBXNativeTarget "SayBeatTests" */;
+			buildPhases = (
+				A179C69F136CA31F0051F712 /* Sources */,
+				A179C6A0136CA31F0051F712 /* Frameworks */,
+				A179C6A1136CA31F0051F712 /* Resources */,
+				A179C6A2136CA31F0051F712 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A179C6A7136CA31F0051F712 /* PBXTargetDependency */,
+			);
+			name = SayBeatTests;
+			productName = SayBeatTests;
+			productReference = A179C6A4136CA31F0051F712 /* SayBeatTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A179C67A136CA31E0051F712 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Peter Sugihara";
+			};
+			buildConfigurationList = A179C67D136CA31E0051F712 /* Build configuration list for PBXProject "SayBeat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A179C678136CA31E0051F712;
+			productRefGroup = A179C684136CA31E0051F712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A179C682136CA31E0051F712 /* SayBeat */,
+				A179C6A3136CA31F0051F712 /* SayBeatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A179C681136CA31E0051F712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179C692136CA31E0051F712 /* InfoPlist.strings in Resources */,
+				A179C698136CA31E0051F712 /* Credits.rtf in Resources */,
+				A179C69E136CA31E0051F712 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179C6A1136CA31F0051F712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179C6AD136CA31F0051F712 /* InfoPlist.strings in Resources */,
+				A179C6B0136CA31F0051F712 /* SayBeatTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A179C6A2136CA31F0051F712 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A179C67F136CA31E0051F712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179C695136CA31E0051F712 /* main.m in Sources */,
+				A179C69B136CA31E0051F712 /* SayBeatAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179C69F136CA31F0051F712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179C6B2136CA31F0051F712 /* SayBeatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A179C6A7136CA31F0051F712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A179C682136CA31E0051F712 /* SayBeat */;
+			targetProxy = A179C6A6136CA31F0051F712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A179C690136CA31E0051F712 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179C691136CA31E0051F712 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A179C696136CA31E0051F712 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179C697136CA31E0051F712 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A179C69C136CA31E0051F712 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179C69D136CA31E0051F712 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A179C6AB136CA31F0051F712 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179C6AC136CA31F0051F712 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A179C6B3136CA31F0051F712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A179C6B4136CA31F0051F712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A179C6B6136CA31F0051F712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SayBeat/SayBeat-Prefix.pch";
+				INFOPLIST_FILE = "SayBeat/SayBeat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A179C6B7136CA31F0051F712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SayBeat/SayBeat-Prefix.pch";
+				INFOPLIST_FILE = "SayBeat/SayBeat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A179C6B9136CA31F0051F712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SayBeat.app/Contents/MacOS/SayBeat";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SayBeatTests/SayBeatTests-Prefix.pch";
+				INFOPLIST_FILE = "SayBeatTests/SayBeatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A179C6BA136CA31F0051F712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SayBeat.app/Contents/MacOS/SayBeat";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SayBeatTests/SayBeatTests-Prefix.pch";
+				INFOPLIST_FILE = "SayBeatTests/SayBeatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A179C67D136CA31E0051F712 /* Build configuration list for PBXProject "SayBeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A179C6B3136CA31F0051F712 /* Debug */,
+				A179C6B4136CA31F0051F712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A179C6B5136CA31F0051F712 /* Build configuration list for PBXNativeTarget "SayBeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A179C6B6136CA31F0051F712 /* Debug */,
+				A179C6B7136CA31F0051F712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A179C6B8136CA31F0051F712 /* Build configuration list for PBXNativeTarget "SayBeatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A179C6B9136CA31F0051F712 /* Debug */,
+				A179C6BA136CA31F0051F712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A179C67A136CA31E0051F712 /* Project object */;
+}
