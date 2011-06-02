@@ -28,12 +28,14 @@
     c4 = [[ChannelViewController alloc] initWithNibName:@"ChannelView" bundle:nil];
     [channel4 addSubview:c4.view];
     
-//    [self loadDefaults];
+    [self loadDefaults];
+    
+    [window recalculateKeyViewLoop];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
-//    [self saveDefaults];
+    [self saveDefaults];
 }
 
 #pragma mark - Defaults
@@ -51,18 +53,27 @@ static NSString *C4LooperKey = @"C4Looper";
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults stringForKey:VersionKey]) {
         NSData *data;
+        SpeechLooper *looper;
         
         data = [defaults objectForKey:C1LooperKey];
-        [c1 setLooper:[NSKeyedUnarchiver unarchiveObjectWithData:data]];
+        looper = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        [c1.looper loadSettingFromLooper:looper];
+        [c1 syncControlsWithVoice];
         
         data = [defaults objectForKey:C2LooperKey];
-        [c2 setLooper:[NSKeyedUnarchiver unarchiveObjectWithData:data]];
+        looper = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        [c2.looper loadSettingFromLooper:looper];
+        [c2 syncControlsWithVoice];
 
         data = [defaults objectForKey:C3LooperKey];
-        [c3 setLooper:[NSKeyedUnarchiver unarchiveObjectWithData:data]];
+        looper = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        [c3.looper loadSettingFromLooper:looper];
+        [c3 syncControlsWithVoice];
 
         data = [defaults objectForKey:C4LooperKey];
-        [c4 setLooper:[NSKeyedUnarchiver unarchiveObjectWithData:data]];
+        looper = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        [c4.looper loadSettingFromLooper:looper];
+        [c4 syncControlsWithVoice];
     } else { // first use of the app
         c1.looper.phrase = @"Hi, how are you?";
         [c1.textField setStringValue:@"Hi, how are you?"];
@@ -78,7 +89,7 @@ static NSString *C4LooperKey = @"C4Looper";
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
 	data = [NSKeyedArchiver archivedDataWithRootObject:c1.looper];
-	[defaults setObject:data forKey:C1LooperKey];
+	[defaults setObject:[data copy] forKey:C1LooperKey];
 	
     data = [NSKeyedArchiver archivedDataWithRootObject:c2.looper];
 	[defaults setObject:data forKey:C2LooperKey];

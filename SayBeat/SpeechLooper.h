@@ -20,5 +20,6 @@
 @property (nonatomic, retain) NSSpeechSynthesizer *voice;
 
 - (void)speak;
+- (void)loadSettingFromLooper:(SpeechLooper *)looper;
 
 @end

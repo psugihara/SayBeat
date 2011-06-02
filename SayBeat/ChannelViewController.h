@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "SpeechLooper.h"
 
+
 @interface ChannelViewController : NSViewController <NSCoding> {
 @private
     NSTextField *textField;
@@ -28,5 +29,6 @@
 
 - (IBAction)controlTouched:(id)sender;
 - (void)syncVoiceWithControls;
+- (void)syncControlsWithVoice;
 
 @end

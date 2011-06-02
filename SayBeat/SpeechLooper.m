@@ -38,7 +38,7 @@
 {
     // Get rid of strings that are just whitespace.
     NSString *trimmed = [p stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
-    if ([phrase isNotEqualTo:trimmed]) {
+    if (!phrase || [phrase isNotEqualTo:trimmed]) {
         phrase = [trimmed retain];
         if (looping && ![voice isSpeaking] && ![phrase isEqualToString:@""]) {
             [self speak];
@@ -50,7 +50,16 @@
 {
     [voice startSpeakingString:phrase];
 }
-     
+  
+- (void)loadSettingFromLooper:(SpeechLooper *)looper
+{
+    [self.voice setVoice:[looper.voice voice]];
+    [self.voice setVolume:[looper.voice volume]];
+    [self.voice setRate:[looper.voice rate]];
+    self.phrase = [NSString stringWithFormat:@"%@",looper.phrase];
+}
+
+
 #pragma - NSSpeechSynthesizerDelegate
  
  - (void)speechSynthesizer:(NSSpeechSynthesizer *)sender didFinishSpeaking:(BOOL)success
@@ -70,7 +79,6 @@ static NSString *VolumeKey = @"Volume";
 {
     NSNumber *rate = [NSNumber numberWithFloat:[voice rate]];
     NSNumber *volume = [NSNumber numberWithFloat:[voice volume]];
-    
     [encoder encodeObject:phrase forKey:PhraseKey];
     [encoder encodeObject:[voice voice] forKey:VoiceKey];
     [encoder encodeObject:rate forKey:RateKey];
@@ -83,10 +91,12 @@ static NSString *VolumeKey = @"Volume";
     if (self) {
         voice = [[NSSpeechSynthesizer alloc] initWithVoice:[decoder decodeObjectForKey:VoiceKey]];
         voice.delegate = self;
+        [voice setVoice:[decoder decodeObjectForKey:VoiceKey]];
         [voice setRate:[[decoder decodeObjectForKey:RateKey] floatValue]];
         [voice setVolume:[[decoder decodeObjectForKey:VolumeKey] floatValue]];
+        
         looping = YES;
-        self.phrase = [decoder decodeObjectForKey:PhraseKey];
+        phrase = [[decoder decodeObjectForKey:PhraseKey] retain];
     }
     return self;
 }

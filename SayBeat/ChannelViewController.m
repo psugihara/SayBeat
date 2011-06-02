@@ -8,6 +8,7 @@
 
 #import "ChannelViewController.h"
 
+
 @implementation ChannelViewController
 
 
@@ -55,6 +56,16 @@
     [looper.voice setVoice:[prefix stringByAppendingString:[voiceMenu titleOfSelectedItem]]];
     [looper.voice setRate:[rateSlider floatValue]];
     [looper.voice setVolume:[volumeSlider floatValue]];
+}
+
+- (void)syncControlsWithVoice
+{
+    NSString *prefix = @"com.apple.speech.synthesis.voice.";
+    NSString *voiceName = [[looper.voice voice] stringByReplacingOccurrencesOfString:prefix withString:@""];
+    [voiceMenu selectItemWithTitle:voiceName];
+    [rateSlider setFloatValue:[looper.voice rate]];
+    [volumeSlider setFloatValue:[looper.voice volume]];
+    [textField setStringValue:looper.phrase];
 }
 
 
